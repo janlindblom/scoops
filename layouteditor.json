@@ -1,0 +1,16 @@
+{
+  "extract_dir": "layout",
+  "license": "Proprietary",
+  "url": "https://layouteditor.com/releases/20220423/layout-20220423-win-64bit.zip",
+  "homepage": "https://layouteditor.com/",
+  "bin": "bin\\layout.exe",
+  "hash": "86b7e33316f911545045b298228a49ffb308e50aac79d0165329eee2c18d755d",
+  "version": "2022.04.23",
+  "shortcuts": [[
+	  "LayoutEditor",
+	  "bin\\layout.exe"
+  ]],
+  "suggest": {
+	  "JRE": ["java/openjdk", "java/zulu-jre"]
+  }
+}
