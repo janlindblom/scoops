@@ -1,0 +1,61 @@
+{
+  "version": "3.7.0.1796",
+  "description": "The AVR Toolchain is a collection of tools/libraries used to create applications for AVR microcontrollers.",
+  "homepage": "https://www.microchip.com/en-us/tools-resources/develop/microchip-studio/gcc-compilers/",
+  "license": "GPL-3.0-or-later",
+  "architecture": {
+    "64bit": {
+      "hash": "4aba6af3334ddf10718a53a1a09c22ddebdd7741fdbad982104b14a1bb11553f",
+      "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64.zip"
+    }
+  },
+  "extract_dir": "avr8-gnu-toolchain-win32_x86_64",
+  "bin": [
+    "bin\\avr-strip.exe",
+    "bin\\avr-objdump.exe",
+    "bin\\avr-readelf.exe",
+    "bin\\avr-gcc-ranlib.exe",
+    "bin\\avr-gcc-nm.exe",
+    "bin\\avr-objcopy.exe",
+    "bin\\avr-g++.exe",
+    "bin\\avr-ld.bfd.exe",
+    "bin\\avr-gcov-dump.exe",
+    "bin\\avr-gcov.exe",
+    "bin\\avr-c++filt.exe",
+    "bin\\avr-elfedit.exe",
+    "bin\\avr-size.exe",
+    "bin\\avr-gdb.exe",
+    "bin\\avr-cpp.exe",
+    "bin\\avr-nm.exe",
+    "bin\\avr-gprof.exe",
+    "bin\\avr-addr2line.exe",
+    "bin\\avr-strings.exe",
+    "bin\\avr-gcov-tool.exe",
+    "bin\\avr-gcc-ar.exe",
+    "bin\\avr-ranlib.exe",
+    "bin\\avr-ld.exe",
+    "bin\\avr-gcc-7.3.0.exe",
+    "bin\\avr-as.exe",
+    "bin\\avr-gcc.exe",
+    "bin\\avr-ar.exe",
+    "bin\\avr-c++.exe",
+    "libexec\\gcc\\avr\\7.3.0\\collect2.exe",
+    "libexec\\gcc\\avr\\7.3.0\\install-tools\\fixincl.exe",
+    "libexec\\gcc\\avr\\7.3.0\\cc1.exe",
+    "libexec\\gcc\\avr\\7.3.0\\lto1.exe",
+    "libexec\\gcc\\avr\\7.3.0\\cc1plus.exe",
+    "libexec\\gcc\\avr\\7.3.0\\lto-wrapper.exe"
+  ],
+  "checkver": {
+    "url": "http://www.microchip.com/RSS/recent-software.xml",
+    "xpath": "/rss/channel/item/link",
+    "regex": "avr8-gnu-toolchain-([\\d.]+)-win32.any.x86_64.zip"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/avr8-gnu-toolchain-$version-win32.any.x86_64.zip"
+      }
+    }
+  }
+}
