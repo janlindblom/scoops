@@ -6,6 +6,9 @@
   "depends": "python",
   "url": "https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py",
   "hash": "d945782af074c90b668ae146192bf46b0e26fd650696fd20e28c82ebf17101e4",
+  "pre_install": [
+    "if (!(Test-Path \"$persist_dir\\packages\")) { New-Item -Path \"$dir\\packages\" -ItemType Directory | Out-Null }"
+  ],
   "installer": {
     "script": [
       "$env:PLATFORMIO_CORE_DIR=\"$dir\"",
@@ -36,5 +39,6 @@
   },
   "autoupdate": {
     "url": "https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py"
-  }
+  },
+  "persist": "packages"
 }
