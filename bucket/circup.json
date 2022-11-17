@@ -1,30 +1,30 @@
 {
-  "version": "1.1.2",
-  "description": "CircuitPython library updater. ",
-  "homepage": "https://github.com/adafruit/circup",
-  "license": "MIT",
-  "url": "https://github.com/adafruit/circup/archive/refs/tags/1.1.2.tar.gz",
-  "hash": "822e022e34919500c8c6dd572020cf153cf20d6edbb501cb9ac69826d7f525a0",
-  "depends": "python",
-  "installer": {
-    "script": [
-      "Push-Location \"$dir\"",
-      "python -m venv circup",
-      ".\\circup\\Scripts\\activate",
-      "try {",
-      "    python -m pip install wheel",
-      "    python -m pip install circup",
-      "}",
-      "finally {",
-      "    Remove-Item \"circup-$version\" -Recurse",
-      "    deactivate",
-      "    Pop-Location",
-      "}"
-    ]
-  },
-  "bin": "circup\\Scripts\\circup.exe",
-  "checkver": "github",
-  "autoupdate": {
-      "url": "https://github.com/adafruit/circup/archive/refs/tags/$version.tar.gz"
-  }
+    "version": "1.1.3",
+    "description": "CircuitPython library updater. ",
+    "homepage": "https://github.com/adafruit/circup",
+    "license": "MIT",
+    "url": "https://github.com/adafruit/circup/archive/refs/tags/1.1.3.tar.gz",
+    "hash": "f5b841915257a5e3cd1f68b306f42b2d85df41b2beae7e0c47cb618170d00525",
+    "depends": "python",
+    "installer": {
+        "script": [
+            "Push-Location \"$dir\"",
+            "python -m venv circup",
+            ".\\circup\\Scripts\\activate",
+            "try {",
+            "    python -m pip install wheel",
+            "    python -m pip install circup",
+            "}",
+            "finally {",
+            "    Remove-Item \"circup-$version\" -Recurse",
+            "    deactivate",
+            "    Pop-Location",
+            "}"
+        ]
+    },
+    "bin": "circup\\Scripts\\circup.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/adafruit/circup/archive/refs/tags/$version.tar.gz"
+    }
 }
