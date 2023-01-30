@@ -1,10 +1,10 @@
 {
-    "version": "1.1.3",
+    "version": "1.1.4",
     "description": "CircuitPython library updater. ",
     "homepage": "https://github.com/adafruit/circup",
     "license": "MIT",
-    "url": "https://github.com/adafruit/circup/archive/refs/tags/1.1.3.tar.gz",
-    "hash": "f5b841915257a5e3cd1f68b306f42b2d85df41b2beae7e0c47cb618170d00525",
+    "url": "https://github.com/adafruit/circup/archive/refs/tags/1.1.4.tar.gz",
+    "hash": "c9c0b6623ccc3d8172a06786f6230c10a0f0835ef72e4c7bd32f075d48aed2a3",
     "depends": "python",
     "installer": {
         "script": [
