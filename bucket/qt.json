@@ -1,0 +1,60 @@
+{
+  "license": "LGPL-2.0-or-later",
+  "depends": [
+    "jom",
+    "perl",
+    "python",
+    "ruby",
+    "vswhere"
+  ],
+  "bin": "",
+  "version": "5.15.8",
+  "homepage": "https://download.qt.io/official_releases/qt/5.15/",
+  "description": "Qt framework 5.15.",
+  "architecture": {
+    "64bit": {
+      "url": "https://download.qt.io/official_releases/qt/5.15/5.15.8/single/qt-everywhere-opensource-src-5.15.8.zip",
+      "hash": "md5:4f3d0731eae8bcbbdfcc121dc225722e"
+    },
+    "32bit": {
+      "url": "https://download.qt.io/official_releases/qt/5.15/5.15.8/single/qt-everywhere-opensource-src-5.15.8.zip",
+      "hash": "md5:4f3d0731eae8bcbbdfcc121dc225722e"
+    }
+  },
+  "pre_install": "if (!(Test-Path \"$dir\\qt-everywhere-src-5.15.8\\build\")) { New-Item -Path \"$dir\\qt-everywhere-src-5.15.8\\build\" -ItemType Directory | Out-Null }",
+  "installer": {
+    "script": [
+      "Push-Location \"$dir\\qt-everywhere-src-5.15.8\\build\"",
+      "$vsInstallationPath = vswhere.exe -latest -property installationPath",
+      "$totalLogicalCores = ((Get-CimInstance -ClassName Win32_Processor).NumberOfLogicalProcessors | Measure-Object -Sum).Sum",
+      "if ($vsInstallationPath -and (test-path \"$vsInstallationPath\\Common7\\Tools\\vsdevcmd.bat\")) {",
+      "  & \"${env:COMSPEC}\" /s /c \"`\"$vsInstallationPath\\Common7\\Tools\\vsdevcmd.bat`\" -no_logo && set\" | foreach-object {",
+      "    $name, $value = $_ -split '=', 2",
+      "    set-content env:\"$name\" $value",
+      "  }",
+      "}",
+      "& ${env:COMSPEC} /c '$dir\\qt-everywhere-src-5.15.8\\configure.bat -release -static -static-runtime -no-pch -optimize-size -opengl desktop -prefix \"$dir\" -skip webengine -nomake tools -nomake tests -nomake examples -mp -opensource -confirm-license'",
+      "Invoke-Expression -Command \"$(scoop which jom.exe) /W /S /J $(totalLogicalCores)\" -ErrorAction Stop",
+      "Invoke-Expression -Command \"$(scoop which jom.exe) install\" -ErrorAction Stop",
+      "Pop-Location",
+      "Remove-Item \"$dir\\qt-everywhere-src-5.15.8\" -Recurse"
+    ]
+  },
+  "checkver": {
+    "url": "https://download.qt.io/official_releases/qt/5.15/",
+    "regex": "([\\d.]+)\/"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://download.qt.io/official_releases/qt/5.15/$version/single/qt-everywhere-opensource-src-$version.zip"
+      },
+      "32bit": {
+        "url": "https://download.qt.io/official_releases/qt/5.15/$version/single/qt-everywhere-opensource-src-$version.zip"
+      }
+    },
+    "hash": {
+      "url": "$baseurl/md5sums.txt"
+    }
+  }
+}
