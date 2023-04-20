@@ -1,0 +1,8 @@
+{
+  "license": "MIT",
+  "hash": "335f1fa75d70004fcb0d1bb18c6003e6507d3c59f8c6009dcb39a77e576249de",
+  "version": "0.8.0",
+  "bin": "taplo.exe",
+  "homepage": "https://github.com/tamasfe/taplo/",
+  "url": "https://github.com/tamasfe/taplo/releases/download/0.8.0/taplo-full-windows-x86_64.zip"
+}
