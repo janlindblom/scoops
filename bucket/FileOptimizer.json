@@ -1,10 +1,36 @@
 {
-  "homepage": "",
+  "homepage": "https://nikkhokkho.sourceforge.io/static.php?page=FileOptimizer",
+  "description": "FileOptimizer is an advanced file optimizer featuring a lossless file size reduction.",
   "bin": "",
-  "depends": "",
-  "license": "",
-  "extract_dir": "",
-  "url": "https://downloads.sourceforge.net/project/nikkhokkho/FileOptimizer/14.20.2553/FileOptimizerFull.7z.exe",
-  "version": "14.20.2553",
-  "hash": ""
+  "license": "LGPL-3.0-only",
+  "url": "https://downloads.sourceforge.net/project/nikkhokkho/files/FileOptimizer/16.20.2771/FileOptimizerFull.7z.exe/download#/dl.7z",
+  "version": "16.20.2771",
+  "hash": "c7e6370eb8096d4ecd4011a719d801efe634d6e3885006b9449c7752ca886edb",
+  "architecture": {
+    "64bit": {
+      "shortcuts": [
+        [
+          "FileOptimizer64.exe",
+          "FileOptimizer"
+        ]
+      ]
+    },
+    "32bit": {
+      "shortcuts": [
+        [
+          "FileOptimizer32.exe",
+          "FileOptimizer"
+        ]
+      ]
+    }
+  },
+  "checkver": {
+    "sourceforge": {
+      "project": "nikkhokkho",
+      "path": "FileOptimizer"
+    }
+  },
+  "autoupdate": {
+    "url": "https://downloads.sourceforge.net/project/nikkhokkho/files/FileOptimizer/$version/FileOptimizerFull.7z.exe",
+  }
 }
