@@ -10,5 +10,15 @@
   ],
   "homepage": "https://textbrowser.github.io/biblioteq/",
   "version": "2020.09.09",
-  "hash": "6e488066631654d9ce87793098dc4659128fc4fd03c747a160467c320a48740b"
+  "hash": "6e488066631654d9ce87793098dc4659128fc4fd03c747a160467c320a48740b",
+  "checkver": {
+    "github": "https://github.com/textbrowser/biblioteq"
+  },
+  "autoupdate": {
+    "url": "https://github.com/textbrowser/biblioteq/releases/download/$version/BiblioteQ-$version.zip",
+    "hash": {
+      "url": "$baseurl/latest.yml",
+      "regex": "sha512:\\s+$base64"
+    }
+  }
 }
