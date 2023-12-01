@@ -1,6 +1,6 @@
 {
   "license": "BSD",
-  "url": "https://github.com/textbrowser/biblioteq/releases/download/2020.09.09/BiblioteQ.zip",
+  "url": "https://github.com/textbrowser/biblioteq/releases/download/2023.06.06/BiblioteQ-2023.06.06.zip",
   "bin": "BiblioteQ\\BiblioteQ.exe",
   "shortcuts": [
     [
@@ -9,8 +9,8 @@
     ]
   ],
   "homepage": "https://textbrowser.github.io/biblioteq/",
-  "version": "2020.09.09",
-  "hash": "6e488066631654d9ce87793098dc4659128fc4fd03c747a160467c320a48740b",
+  "version": "2023.06.06",
+  "hash": "57f083952b38e44f09d1c7f058d548b1acf9715229ae524ae182a482a637a379",
   "checkver": {
     "github": "https://github.com/textbrowser/biblioteq"
   },
