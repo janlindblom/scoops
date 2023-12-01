@@ -1,0 +1,24 @@
+{
+  "description": "IDE and the engine meant for creating and running videogames of adventure genre.",
+  "license": "Artistic-2.0",
+  "url": "https://github.com/adventuregamestudio/ags/releases/download/v3.6.0.54/AGS-3.6.0.54-P7.zip",
+  "version": "3.6.0.54",
+  "homepage": "https://www.adventuregamestudio.co.uk/",
+  "hash": "f384e47e539ef06a7728500c70e27c80eb55c4e28412ae685c76cba818777f21",
+  "shortcuts": [
+    [
+      "AGSEditor.exe",
+      "AGS Editor"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/adventuregamestudio/ags"
+  },
+  "autoupdate": {
+    "url": "https://github.com/adventuregamestudio/ags/releases/download/v.$version/AGS-$version*.zip",
+    "hash": {
+      "url": "$baseurl/latest.yml",
+      "regex": "sha512:\\s+$base64"
+    }
+  }
+}
