@@ -1,0 +1,20 @@
+{
+  "homepage": "https://www.netsurf-browser.org/",
+  "description": "NetSurf is a free, open source web browser.",
+  "hash": "3e3a2fc6fca8a26cd26751f49590e4ad0be408eaa7349919f8fa58e9057d987f",
+  "url": "https://download.netsurf-browser.org/netsurf/releases/pre-built/windows/3.11-netsurf.exe#/dl.7z",
+  "version": "3.11",
+  "license": "GPL-2.0-only",
+  "shortcuts": [
+    [
+      "NetSurf.exe",
+      "NetSurf",
+      "",
+      "NetSurf.ico"
+    ]
+  ],
+  "pre_install": [
+    "Copy-Item \"$dir\\`$PLUGINSDIR\\UserInfo.dll\" \"$dir\"",
+    "Remove-Item \"$dir\\`$*\", \"$dir\\uninstall.exe\" -Recurse"
+  ]
+}
