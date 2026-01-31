@@ -3,9 +3,9 @@
     "description": "Decentralized cloud object storage client.",
     "homepage": "https://storj.io/",
     "bin": "uplink.exe",
-    "url": "https://github.com/storj/storj/releases/download/v1.146.6/uplink_windows_amd64.zip",
-    "hash": "8bbe0d9e676cdc28c0923b79373027eb1ea6e1e9c2a197e753405917a0389f88",
-    "version": "1.146.6",
+    "url": "https://github.com/storj/storj/releases/download/v1.146.7/uplink_windows_amd64.zip",
+    "hash": "472223fbd683a0f03f6c6c834b6358aa86a18a8092e074331ebedc443ff610fe",
+    "version": "1.146.7",
     "checkver": {
         "github": "https://github.com/storj/storj"
     },
