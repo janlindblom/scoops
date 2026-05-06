@@ -1,17 +1,17 @@
 {
-    "version": "22.1.0",
+    "version": "22.1.4",
     "description": "Clang-Format is an LLVM-based code formatting tool",
     "homepage": "https://pypi.org/project/clang-format/",
     "license": "Apache-2.0",
     "depends": "python",
     "architecture": {
         "64bit": {
-            "url": "https://files.pythonhosted.org/packages/py2.py3/c/clang_format/clang_format-22.1.0-py2.py3-none-win_amd64.whl",
-            "hash": "962c7b1c9362ac028e664ba8b1c4f0d71eab13ceade80f19f84ed8a66d126db4"
+            "url": "https://files.pythonhosted.org/packages/py2.py3/c/clang_format/clang_format-22.1.4-py2.py3-none-win_amd64.whl",
+            "hash": "cdc110e41ab8caee24207cc96a49523a5b9339b3ddb66386b66580949d7e8626"
         },
         "32bit": {
-            "url": "https://files.pythonhosted.org/packages/py2.py3/c/clang_format/clang_format-22.1.0-py2.py3-none-win32.whl",
-            "hash": "beeae9d7fc3490cce6ffac0eb5643d508991678cf5b8217ca9a90a16b83a5a1d"
+            "url": "https://files.pythonhosted.org/packages/py2.py3/c/clang_format/clang_format-22.1.4-py2.py3-none-win32.whl",
+            "hash": "2281371d2008b7745a0d434be0edcc6529393a4c35fc28a41722f11cc44aa289"
         }
     },
     "installer": {
